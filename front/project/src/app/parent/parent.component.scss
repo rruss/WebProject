@@ -1,0 +1,312 @@
+#toReg{
+    margin-left: 700px;
+  }
+  
+  #toReg, #toLogin, #profile, #logout{
+    margin-top: 40px;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: rgb(255, 205, 0);
+    font-family: 'Concert One', cursive;
+  }
+
+  #profile, #logout{
+    display: inline-block;
+  }
+  
+  .header{
+    margin-left: 230px;
+    margin-bottom: 10px;
+  }
+  .item-title{
+      font-size: 20px;
+      padding-top: 30px;
+      height: 60px;
+      width: 80%;
+      background-color: rgb(0, 186, 218);
+      border-radius: 40px;
+      margin-top: 10px;
+      text-align: center;
+  }
+  .passing_btn{
+      background-color:rgb(255, 205, 0);
+      width: 130px;
+      height: 30px;
+      border-radius: 5px; 
+  }
+  .back_btn{
+      font-size: 20px;
+      width: 30px;
+      height: 30px;
+      background-color: rgb(179, 48, 55);
+      font-weight: bold;
+      margin-left: 670px;
+      border-radius: 10px;
+  }
+  
+  
+  #window_reg{
+      display: none;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      left: 0;
+      top: 0;
+  }
+  .reg_item{
+      height: 40px;
+      width: 60%;
+      margin: 10px;
+      font-size: 15px;
+      margin-left: 20%;
+      border-radius: 5px;
+  }
+  .reg_item.age{
+      // font-size: 15px;
+      width: 10%;
+  }
+  .reg_btn{
+      height: 30px;
+      width: 150px;
+      font-size: 20px;
+      background-color: rgb(255, 201, 0);
+      border-radius: 10px;
+      margin-left: 250px;
+  }
+  
+  .window_content1{
+      height: 600px;
+      width: 700px;
+      border-radius: 10px;
+      background-color: rgb(146, 198, 218);
+      margin: 50px auto;
+  }
+  #section_window{
+      display: none;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      left: 0;
+      top: 0;
+  }
+  .window_content{
+      height: 300px;
+      width: 500px;
+      margin: 50px auto;
+      border-radius: 10px;
+      background-color: rgb(146, 198, 218);
+  }
+  .log_btn{
+      height: 30px;
+      width: 100px;
+      background-color: rgb(255, 201, 0);
+      border-radius: 10px;
+      margin-left: 200px;
+      margin-top: 40px;
+  }
+  .back_btn.log{
+      margin-left: 470px;
+      height: 30px;
+      width: 30px;
+      font-size: 15px;
+  }
+  .log_input{
+      height: 40px;
+      width: 60%;
+      margin-left: 20%;
+      font-size: 20px;
+      margin-top: 10px;
+      border-radius: 10px;
+  }
+  
+  .inner-item{
+      font-size: 20px;
+      font-weight: bolder;
+      background-color: #b7beb7;
+      padding-top: 5px;
+      height: 60px;
+      text-align: center;
+      width: 50%;
+      border-radius: 15px;
+      margin-top: 3px;
+      border: 1px solid black;
+      margin-left: 250px;
+      
+  }
+  .test{
+      width: 740px;
+      height: 790px;
+      font-size: 25px;
+      background-color: #4ea84b;
+      text-align: center;
+      padding: 25px 10px 15px 10px;
+      float: left;
+      clear: left;
+      border-radius: 10px;
+      margin-top: 40px;
+      margin-left: 450px;
+      font-weight: bold;
+      color: white;
+  }
+  .test_list{
+      text-align: left;
+      overflow: auto;
+      width: 700px;
+      height: 750px;
+      background-color: white;
+      padding: 7px;
+      font-size: 25px;
+      color: black;
+      font-weight: normal; 
+  }
+  .end_btn{
+      width: 100px;
+      height: 30px;
+      font-size: 18.5px;
+      background-color: #48a07b;
+      margin-left: 300px;
+      border-radius: 10px;
+  }
+  
+  #section_result{
+      display: none;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      left: 0;
+      top: 0;
+  }
+  
+  .window_result{
+      height: 400px;
+      width: 600px;
+      background-color: #d7e0df;
+      margin: 100px auto;
+      border-radius: 10px;
+  
+  }
+  .result{
+      font-size: 50px;
+      font-weight: bold;
+      color: #072026;
+      padding: 20px;
+      margin-left: 30%;
+  }
+  .test_res{
+      font-size: 40px;
+      margin-left: 10%;
+  }
+  .back_res{
+      height: 40px;
+      width: 120px;
+      font-size: 20px;
+      background-color: #b29a15;
+      border-radius: 10px;
+      margin-left: 30%;
+      margin-top: 10%;
+  }
+  
+  #section_profile{
+      display: none;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      left: 0;
+      top: 0;
+  }
+  
+  .window_profile{
+      height: 800px;
+      width: 600px;
+      background-color: #d7e0df;
+      // margin: 100px auto;
+      margin-left: 120px;
+      border-radius: 10px;
+  
+  }
+  .back_prof{
+      height: 40px;
+  width: 120px;
+      font-size: 20px;
+      background-color: #b29a15;
+      border-radius: 10px;
+      margin-left: 30%;
+      margin-top: 95%;   
+  }
+  .item-title-1{
+      align-items: center;
+  }
+  // .inner-item:last-child{
+  //     border-bottom: 1px solid black;
+  // }
+  
+  .item-title:hover{
+      transition: 1s;
+      background-color: #878f99;
+  }
+  #profile{
+      display: none;
+  }
+  #logout{
+      display: none;
+  }
+
+  .profile_input{
+    margin-left: 160px;
+    margin-top: 20px;
+    width: 300px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  .change_btn{
+      margin-left: 250px;
+      height: 40px;
+      width: 90px;
+      font-size: 15px;
+      border-radius: 20px;
+      background-color: rgb(255, 201, 0);
+      font-family: 'Concert One', cursive;
+  }
+  .back_btn.prof{
+    margin-left: 570px;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+  }
+
+  .profile_results{
+      margin-left: 250px;
+  }
+  .arr_li_result{
+      font-size: 20px;
+      margin-left: 50px;
+      padding-top: 4px;
+  }
+  .profile_result{
+      font-size: 20px;
+      display: flex;
+      margin-left: 50px;
+  }
+  .test_name{
+      width: 400px;
+      height: 45px;
+      border: black 1px solid;
+  }
+  .main{
+      font-weight: bold;
+  }
+  .test_result{
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    border: black 1px solid;
+  }

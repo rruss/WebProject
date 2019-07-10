@@ -1,0 +1,69 @@
+
+footer {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  clear: both;
+  background-color: rgb(255, 201, 0);
+
+}
+
+.footer_info {
+  width: 180px;
+  height: 210px;
+  float: left;
+  margin-top: 15px;
+  margin-right: 55px;
+  background-color: rgb(255, 201, 0);
+  color: rgb(255,255,255);
+}
+
+.about_us {
+  margin-left: 150px;
+}
+
+.partners {
+  margin-left: 50px;
+}
+
+.contact {
+  width: 220px;
+}
+
+.contact p {
+  margin-left: 10px;
+  color: gray;
+}
+
+.contact #number:before{
+  content: "☏";
+  font-size: 20px;
+}
+
+h5 {
+  margin-top: 7px;
+  margin-bottom: 12px;
+  margin-left: 10px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+footer a {
+  margin: 5px 0px 0px 10px;
+  font-size: 15px;
+  color: gray;
+  display: block;
+}
+
+footer a:hover {
+  color: red;
+}
+
+.social_media ol{
+  list-style: none;
+}
+
+.social_media li{
+  display: inline-block;
+  padding-left: 5px;
+}

@@ -1,0 +1,41 @@
+.background h1{
+  font-family: 'Concert One', cursive;
+  color: white;
+  font-size: 50px;
+}
+
+.one{
+  padding-top: 270px;
+  padding-left: 60px;
+  float: left;
+}
+
+.two{
+  padding-top: 250px;
+  padding-right: 100px;
+  float: right;
+}
+.background {
+  background-image: url('../../assets/psy.jpg');
+  background-color: white;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.text h1{
+  font-family: 'Concert One', cursive;
+  color: rgb(0, 186, 218);
+  padding-top: 100px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.text h2{
+  text-align: center;
+  color: rgb(0, 19, 65);
+  padding-top: 20px;
+
+}
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <div class = "top_btns">
+      <button id="toReg" class="registr_btn" (click) = "toReg()">Тіркелу</button>
+      <button id="toLogin" class="registr_btn" (click) ="toLogin()"> Кіру </button>
+      <button id="profile" class="registr_btn prof" (click) = "toGoProfile()"> Жеке кабинет </button>
+      <button id="logout" class="registr_btn prof" (click) = "logout()" >Шығу</button>
+    </div>
+    <ng-container >
+        <div class="window_reg" id="window_reg" >
+            <ng-container>
+                <div class="window_content1">
+                    <button class="back_btn" (click)="hideModal()">X</button>
+                    <div >
+
+                        <div>
+                          <input class="reg_item" type="text" placeholder="Аты" [(ngModel)]="first_name" />
+                        </div>
+                        <div >
+                            <input class="reg_item" type="text" placeholder="Тегі"  [(ngModel)]="last_name" />
+                        </div>
+                        <div >
+                          <input class="reg_item age" type="number" placeholder="жасы" [(ngModel)]="age" />
+                        </div>
+                        <div >
+                            <input class="reg_item" type="text" placeholder="Электронды пошта" [(ngModel)]="email"/>
+                          </div>
+                        <div>
+                          <input class="reg_item" type="text" placeholder="Логин" [(ngModel)]="login"/>
+                        </div>
+                        <div>
+                          <input class="reg_item" type="password" placeholder="құпия сөз" [(ngModel)]="password"/>
+                        </div>
+                        <div>
+                            <input class="reg_item" type="password" placeholder="құпия сөз" [(ngModel)]="password_repeat"/>
+                        </div>
+                        <div >
+                          <button class="reg_btn"  (click) = "register()">Тіркелу</button>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+          </div>
+    </ng-container>
+  </header>
+
+  <body>
+   
+  <div class='header'>
+      <div class='header-item' >
+          <div class="item-title" (click)="f1()"> І- ТҰЛҒАНЫҢ ИНТЕЛЛЕКТУАЛДЫҚ ТҰРҒЫСЫН 
+              ЗЕРТТЕУ ӘДІСТЕРІ. ОЙЛАУДЫ ДИАГНОСТИКАЛАУ </div>
+              <div class="item-title-1" *ngIf="ok">
+                  <div class="inner-item" >
+                    1.1 Математикалық логика <br>
+                    <a href="#test"> <button class="passing_btn" (click)="toEnter(1)" >Тесттен өту </button></a>
+                  </div>
+                  
+                  <div class="inner-item">1.2 Сөздік логика
+                      <br>
+                      <a href="#test"> <button class="passing_btn" (click)="toEnter(2)">Тесттен өту </button></a>
+                  </div>
+                  <div class="inner-item">1.3 Мақал-мәтелдер әдістемесі
+                      <br>
+                      <button class="passing_btn" (click)="toEnter(3)">Тесттен өту </button>
+                  </div>
+                  <div class="inner-item">1.4 Интеллектуалдық лабильділік
+                      <br>
+                      <button class="passing_btn" >Тесттен өту </button>
+                  </div>
+                  <div class="inner-item">1.5 Амтхауэр тесті
+                      <br>
+                      <button class="passing_btn" >Тесттен өту </button>
+                  </div>
+                  <div class="inner-item">1.6 Беннет тесті
+                      <br>
+                      <button class="passing_btn" >Тесттен өту </button>
+                  </div>
+              </div>
+          <div class="item-title" (click)="f2()"> ІІ-ТҰЛҒАНЫҢ ЭМОЦИОНАЛДЫҚ ТҰРҒЫСЫН ЗЕРТТЕУ </div>
+              <div *ngIf="ok2">
+                <div class="inner-item">2.1 Эмоционалдық бағыттылықты зерттеу Додонов әдістемесi
+                  <br>
+                  <a href="#test"> <button class="passing_btn" (click)="toEnter(1)" >Тесттен өту </button></a>
+                </div>
+                <div class="inner-item">2.2 Люшер тесті
+                  <br>
+                  
+                </div>
+                <div class="inner-item">2.3 Түстер арқылы қатынастарды зерттеу</div>
+              </div>
+          <div class="item-title" (click)="f3()">ІІІ-АДАМНЫҢ ТҰЛҒАЛЫҚ ЕРЕКШЕЛІКТЕРІН ЗЕРТТЕУ</div>
+              <div *ngIf="ok3">
+                <div class="inner-item">3.1 Тұлғаның мінез ерекшелігін жедел диагностикалау әдістемесі</div>
+                <div class="inner-item">3.2 К.Томастың кикiлжiңдi  шешуге арналған тесті</div>
+                <div class="inner-item">3.3 Леонгардтың мінез акцентуациясын зерттеу әдістемесі</div>
+                <div class="inner-item">3.4 Тұлғаны жан-жақты зерттеу әдістемесі</div>
+                <div class="inner-item">3.5 Аяқталмаған сөйлем әдістемесі</div>
+              </div>
+          <diV class="item-title" (click)="f4()"> ІV-КРОСС МӘДЕНИ ҚАТЫНАСТАРДЫ ЗЕРТТЕУ ӘДІСТЕРІ </diV>
+              <div *ngIf="ok4">
+                <div class="inner-item">4.1 Ұлттық сәйкестенуді зерттеу Романов әдістемесі</div>
+                <div class="inner-item">4.2 Толеранттылықты зерттеу Баныкин әдістемесі</div>
+                <div class="inner-item">4.3 Сын тағу әдістемесі</div>
+                <div class="inner-item">4.4 Дүниеде жоқ жануар әдістемесі</div>
+              </div>
+          <div class="item-title" (click)="f5()">V-ТОПТЫ ЗЕРТТЕУ ӘДІСТЕРІ</div>
+              <div *ngIf="ok5">
+                <div class="inner-item">5.1 ТӘПӨЛ</div>
+                <div class="inner-item">5.2 Ұжымды басқару стилін зерттеу</div>
+              </div>
+          <div class="item-title" (click)="f6()">VІ- СПОРТТЫҚ ІС-ӘРЕКЕТТІ ЗЕРТТЕУ ӘДІСТЕМЕЛЕРІ</div>
+              <div *ngIf="ok6">
+                <div class="inner-item">6.1 Тұлғаның ерік-жігерін ұйымдастыруын зерттеу әдістемесі</div>
+                <div class="inner-item">6.2 Т.Элерс әдістемесі</div>
+              </div>
+        </div> 
+
+
+      <ng-container *ngIf="isLogged">
+          
+          <div id="test" *ngIf ="test">
+              <div class="test">
+                  {{title.name}}
+                <div class="test_list">
+                    <ol>
+                      <div *ngFor='let q of title.questions'>
+                        <li> {{q.question}}</li>
+                        <div *ngFor='let a of q.answers'>
+                          <input type="radio" value="{{a.answer}}" name="{{q.id}}"/> {{a.answer}} 
+                        </div>
+                      </div>
+                    </ol>
+                    <button class="end_btn"  (click)="toCheck()"> Аяқтау </button>
+                </div>
+              </div>
+          </div>
+        <!-- <app-test></app-test> -->
+      </ng-container>
+
+      
+      
+      
+  </div>
+  <!-- <button (click)="getOkAnswer(1)"> aa</button>
+  <div>
+      {{okAnswer.id}}
+      <div *ngFor='let s of okAnswer.okanswers'>
+        {{s.id}}-{{s.ok_answer}}-{{s.quesId}}
+      </div>
+    </div> -->
+
+  <div class="section_window" id="section_window" >
+    <ng-container>
+        <div class="window_content">
+            <button class="back_btn log" (click)="hideModal()">X</button>
+            <div>
+                <div>
+                  <input class="log_input" type="text" placeholder="Логин" [(ngModel)]="login"/>
+                </div>
+                <div>
+                  <input class="log_input" type="password" placeholder="құпия сөз" [(ngModel)]="password"/>
+                </div>
+                <div>
+                  <button  class="log_btn" (click)="auth()">Кіру</button>
+                </div>
+              </div>
+        </div>
+    </ng-container>
+  </div>
+
+  <div class="section_result" id="section_result" >
+      <ng-container>
+          <div class="window_result">
+
+              <div class="result">
+                Нәтижесі
+              </div>
+
+              <div class="test_res">
+                Балл: {{test_result}} <br>
+                Деңгей: {{this.test_degree}}
+              </div>
+              <button class="back_res" (click)="hideModalBack()">Шығу</button>
+              
+          </div>
+      </ng-container>
+    </div>
+
+    <div class="section_profile" id="section_profile" >
+      <ng-container>
+          <div class="window_profile">
+            <img src="" /> 
+            <input type="text" [(ngModel)]="profile.first_name" value="{{profile.first_name}}"/><br>
+            <input type="text" [(ngModel)]="profile.last_name" value="{{profile.last_name}}"/><br>
+            <input type="text" [(ngModel)]="profile.age" value="{{profile.age}}"/><br>
+            <input type="text" [(ngModel)]="profile.email" value="{{profile.email}}"/><br>
+              <!-- {{profile.first_name}}<br>
+              {{profile.last_name}} <br>
+              {{profile.age}}<br>
+              {{profile.email}}<br> -->
+              <button class="change_btn" (click) = "changeProfile()"> Өзгерту </button>
+              Нәтижелері <br>
+              <div *ngFor = "let arr of userResults.results">
+                {{arr.test_name}} - {{arr.test_result}}<br>
+              </div>
+
+
+              <button class="back_prof" (click)="hideModal()">Шығу</button>
+              
+          </div>
+      </ng-container>
+    </div>
+
+
+
+  </body>
+  
+
+</html>
